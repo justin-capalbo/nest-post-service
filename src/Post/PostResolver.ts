@@ -9,7 +9,7 @@ const posts: Post[] = [
 
 @Resolver(Post)
 export class PostResolver {
-    @Query(_ => Post, { nullable: true })
+    @Query(_ => [Post], { nullable: true })
     async posts(): Promise<Post[] | null> {
         return plainToClass(Post, posts);
     }
