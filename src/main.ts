@@ -6,7 +6,7 @@ async function main(): Promise<void> {
     const app = await NestFactory.create(AppModule);
 
     app.useGlobalPipes(new ValidationPipe({ transform: true }));
-    await app.listen(3000);
+    await app.listen(4000);
 
     const baseUrl = (await app.getUrl()).replace("[::1]", "localhost");
 
