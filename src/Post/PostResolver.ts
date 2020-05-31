@@ -19,6 +19,11 @@ export class PostResolver {
 
 @Resolver(User)
 export class ExtendUserResolver {
+    @Query(_ => User)
+    async test(): Promise<User> {
+        return { id: "1" };
+    }
+
     @ResolveField('posts', _ => [Post])
     async posts(
         @Parent() { id }: User
