@@ -1,0 +1,29 @@
+{
+  "name": "post-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsnd -r tsconfig-paths/register --respawn --transpileOnly --ignore-watch node_modules src/main.ts"
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.1.1",
+    "@nestjs/core": "^7.1.1",
+    "@nestjs/graphql": "^7.4.1",
+    "@nestjs/platform-express": "^7.1.1",
+    "apollo-server-express": "^2.14.1",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.12.2",
+    "graphql": "^15.0.0",
+    "graphql-tools": "^6.0.5",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.6",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.3"
+  }
+}
